@@ -1,0 +1,4 @@
+--> python basics like taking input from user and output format
+--> variables and operations
+--> reading inputs in .format and advanced positional/naming paramaters methods
+--> .split method to read the unknown number of input values
