@@ -1,0 +1,31 @@
+#Below samle code "finding number of vowels and consonants in a given string" explains if else statements and for loop usage
+
+import string
+s=input("Enter a string: ")
+vowels_list=['a','e','i','o','u']
+v=0
+c=0
+l=string.ascii_letters
+for i in s:
+    if i.lower() in vowels_list:
+        v+=1
+    else:
+        c+=1
+print("Entered string has {} vowels and {} consonants".format(v,c))
+
+#while loop example sample code "Password try in a given number of attempts"
+n=int(input("Enter no.of attempts: "))
+p="charu@123"
+i=0
+while i<n:
+    pw=input("Enter password: ")
+    if(p==pw):
+        print("Successfully loged in !!")
+        break
+    elif(p!=pw and i==(n-1)):
+        print("Wrong password and No of attempts exceeded! Please try after 30 mins")
+        break
+    else:
+        print("Wrong password! Please try again!")
+        i+=1
+
